@@ -5,12 +5,17 @@ export default {
     extend: {
       maxWidth: {
         1440: "1440px",
+        "300px": "300px",
       },
       minWidth: {
         "100vw": "100vw",
       },
       minHeight: {
         "100vh": "100vh",
+      },
+      height: {
+        "158px": "158px",
+        "335px": "335px",
       },
       colors: {
         "dark-blue-elements": "hsl(209, 23%, 22%)",
