@@ -1,51 +1,28 @@
 import CountryCard from "./CountryCard";
+import PropTypes from "prop-types";
 
-const ListCountries = () => {
+const ListCountries = ({ countries }) => {
   return (
     <div className=" w-full">
       <div className="w-full grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-20 justify-items-stretch">
-        <CountryCard
-          flag={"https://flagcdn.com/de.svg"}
-          name="Germany"
-          population={81770900}
-          region="Europe"
-          capital="Berlin"
-        />
-        <CountryCard
-          flag={"https://flagcdn.com/de.svg"}
-          name="Germany"
-          population={81770900}
-          region="Europe"
-          capital="Berlin"
-        />
-        <CountryCard
-          flag={"https://flagcdn.com/de.svg"}
-          name="Germany"
-          population={81770900}
-          region="Europe"
-          capital="Berlin"
-        />
-        <CountryCard
-          flag={"https://flagcdn.com/de.svg"}
-          name="Germany"
-          population={81770900}
-          region="Europe"
-          capital="Berlin"
-        />
-        <CountryCard
-          flag={"https://flagcdn.com/de.svg"}
-          name="Germany"
-          population={81770900}
-          region="Europe"
-          capital="Berlin"
-        />
+        {countries.map((country) => (
+          <CountryCard
+            key={country.name.common}
+            flag={country.flags.png}
+            name={country.name.common}
+            population={country.population}
+            region={country.region}
+            capital={country.capital}
+            slug={country.cca3}
+          />
+        ))}
       </div>
     </div>
   );
 };
 
-export default ListCountries;
+ListCountries.propTypes = {
+  countries: PropTypes.array.isRequired,
+};
 
-//  {data.map((country) => (
-//         <div key={country.name.common}>{country.name.common}</div>
-//       ))}
+export default ListCountries;
