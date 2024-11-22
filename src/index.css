@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .country-detail {
+    @apply font-bold;
+    @apply text-base;
+  }
+
+  .country-detail span {
+    @apply font-light;
+    @apply pl-2;
+  }
+}
