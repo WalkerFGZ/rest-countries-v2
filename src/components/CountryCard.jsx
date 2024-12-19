@@ -8,7 +8,7 @@ const CountryCard = ({ flag, name, population, region, capital, slug }) => {
   };
   return (
     <article
-      className="bg-white h-335px w-full max-w-300px rounded-lg cursor-pointer hover:shadow-lg transition-shadow duration-300 ease-in-out"
+      className="bg-white dark:bg-dark-blue-elements dark:text-white h-335px w-full max-w-300px rounded-lg cursor-pointer hover:shadow-lg transition-shadow duration-300 ease-in-out"
       onClick={handleCardClick}
     >
       <div className="h-158px">

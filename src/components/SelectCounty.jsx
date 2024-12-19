@@ -21,7 +21,7 @@ const SelectCountry = ({ handleFilterByRegion }) => {
   return (
     <div className="w-full flex justify-end">
       <select
-        className="max-w-md h-16 text-lg py-2 pl-3 pr-10 bg-white border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+        className="max-w-md h-16 text-lg py-2 pl-3 pr-10 dark:bg-dark-blue-elements dark:text-white bg-white border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
         defaultValue=""
         value={selectedRegion}
         onChange={(e) => handleSelectChange(e.target.value)}

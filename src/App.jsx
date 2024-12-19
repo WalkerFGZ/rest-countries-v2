@@ -41,7 +41,7 @@ function App() {
   if (error) return <div>Error: {error.message}</div>;
 
   return (
-    <main className="min-h-100vh w-full flex flex-col justify-start items-center font-nunito-sans">
+    <main className="min-h-100vh w-full flex flex-col justify-start items-center font-nunito-sans dark:bg-dark-blue-bg">
       <Header handleSearch={handleSearch} />
       <section className="max-w-1440 w-full flex justify-center flex-col pl-11 pr-11 xl:pl-2 xl:pr-2">
         {!isCountryDetail && (

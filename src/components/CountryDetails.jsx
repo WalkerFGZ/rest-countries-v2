@@ -19,12 +19,12 @@ const CountryDetails = () => {
     <section className="flex flex-col">
       <button
         onClick={handleBack}
-        className="flex items-center gap-2 px-8 py-2 bg-white shadow-md rounded-lg w-fit hover:bg-gray-50 transition-colors my-16"
+        className="flex items-center gap-2 px-8 py-2 dark:bg-dark-blue-elements dark:text-white bg-white shadow-md rounded-lg w-fit hover:bg-gray-50 transition-colors my-16"
       >
         <FiArrowLeft size={20} />
         <span>Back</span>
       </button>
-      <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-2 mt-10">
+      <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-2 mt-10 dark:text-white">
         <div className="">
           <img
             src={country.flags.svg}

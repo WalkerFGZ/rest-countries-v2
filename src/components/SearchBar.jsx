@@ -16,7 +16,7 @@ const SearchBar = ({ handleSearch }) => {
         <input
           value={searchText}
           type="text"
-          className="w-full h-16 text-lg py-2 pl-10 pr-4 bg-white border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+          className="w-full h-16 text-lg py-2 pl-10 pr-4 dark:bg-dark-blue-elements dark:text-white bg-white border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
           placeholder="Search for a country..."
           onChange={(e) => handleTextChange(e.target.value)}
         />
